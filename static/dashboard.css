@@ -1,0 +1,8 @@
+/* Clear numeric entry and data display for low-literacy-friendly use. */
+.range-field input[type="number"] { min-width:0; padding:10px 8px; text-align:center; color:#15271f; background:#fff; border:2px solid #1c6245; font:700 .95rem 'DM Mono',monospace; }
+.range-field input[type="range"] { min-width:0; }
+.numeric-field { grid-template-columns:1fr; }
+.range-field input[type="number"]:focus { box-shadow:0 0 0 3px #d8ee84; }
+.kpis strong,.value-grid strong,.confidence-ring strong,.match b { font-variant-numeric:tabular-nums; }
+.kpis strong { color:#1c6245; }
+@media(max-width:680px){.range-field input[type="number"]{min-height:46px;font-size:1rem}}

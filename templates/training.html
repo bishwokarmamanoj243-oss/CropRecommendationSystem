@@ -1,0 +1,1 @@
+{% extends 'base.html' %}{% block content %}<h1>{{ t('training_completed') }}</h1><p>{{ t('deployed_model') }}: {{ report.deployed_model }}</p><ul>{% for key,value in report.metrics.items() if key != 'confusion_matrix' %}<li>{{ key.replace('_',' ').title() }}: {{ '%.4f'|format(value) }}</li>{% endfor %}</ul><a href="/admin">{{ t('back_dashboard') }}</a>{% endblock %}
